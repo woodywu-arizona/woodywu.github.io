@@ -1,0 +1,47 @@
+---
+layout: default
+title: Research
+---
+
+<div class="blurb">
+	<h1>Research and publications</h1>
+	<h2> Research projects: </h2>
+	<p style="font-family: Arial; font-size: 17pt;"> 1. <b><i>Derivative-free Algorithm Design</i></b></p>
+	<p style="font-family: Times; font-size: 15pt;"> The main part of my Ph.D. research is the development of new <b>D</b>elaunay-based <b>D</b>erivative-free <b>O</b>ptimization via <b>G</b>lobal <b>S</b>urrogates algorithm, dubbed as &Delta;-DOGS. 
+		&Delta;-DOGS is an efficient response surface method that efficiently and globally solves black-box, computationally expensive, nonconvex optimization problems. 
+		&Delta;-DOGS iteratively determines the minimum of the response surface where the minimizer of the truth function locates with the highest probability. 
+		This response surface s(x) models the relationship between input-output data and is constructed based on an interpolant p(x), which curves the fidelity of the underlying function, and an artificially generated uncertainty function e(x) which quantifies how uncertain of the regions that have not yet been explored.</p>
+	<p style="font-family: Arial; font-size: 17pt;"> 1.1 Dimension reduction of &Delta;-DOGS via Active Subspace Method[1]: </p>
+	<p style="font-family: Times; font-size: 15pt;"> It is well-known that the derivative-free algorithm suffers deeply from the curse of dimensionality. 
+		The computational cost of the parameter space increases exponentially as the dimension of the input data increases. 
+		The dimension reduction techniques become an essential tool for derivative-free optimization to deal with moderate dimensional input parameter space. 
+		&Delta;-DOGS is suitable for the number of input parameteres relatively low, (say less than 10). 
+		Throught utilizing the dimension reduction of parameter space using Active Subspace Method, we extended the restriction of the number of design parameters from 10 to 20, which is also the restriction on the number of parameters that Bayesian optimization could possibly handle.
+	<p style="font-family: Arial; font-size: 17pt;"> 1.2 Safety learning algorithm S-DOGS: <b>S</b>afety-guaranteed <b>D</b>erivative-free <b>O</b>ptimization via <b>G</b>lobal <b>S</b>urrogates[2]: </p>
+	<p style="font-family: Times; font-size: 15pt;"> In autonomous systems, it is often necessary to tune parameters in order to optimize towards a given objective. However, users often do not know in advance the region(s) of the otherwise feasible parameter space which, if explored during the optimization process, could lead to severe damage of the experimental system. 
+		For such problems, it is useful to develop algorithms that automatically minimize a given performance measure with unknown mathematical form, while assuring at each function evaluation that the safety of the system is guaranteed. 
+		In this work, a new algorithm is developed such that any user-supplied safety constraints are ensured to be satisfied during each step of the optimization process. 
+		The algorithm developed, dubbed Safety-guaranteed Derivative-free Optimization via Global Surrogate (S-DOGS), can be implemented to automatically, efficiently, and safely learn the boundary of the underlying safe region, while simultaneously identifying the global minimizer of the objective function. 
+		As to the best knowledge of authors, S-DOGS is the very first safe learning data-driven algorithm that does not rely on Gaussian processes.</p>
+	<p style="font-family: Times; font-size: 15pt;"> To demonstrate the efficiency, S-DOGS is applied to optimize the parameters of the nonlinear control problem of quadrotor trajectory following test case.</p>
+   	<p align="center"><img src="quadrotor_trajectory.pdf" width="750" height="500"></p>
+	<p style="font-family: Arial; font-size: 17pt;"> 1.3 Multi-fidelity optimization on stochastic function approximated via time-averaged statistics:</p>
+	<p style="font-family: Times; font-size: 15pt;"> Under preparation.</p>
+	<p style="font-family: Arial; font-size: 17pt;"> 1.4 Function feasibility via binary oracle calls.</p>
+	<p style="font-family: Times; font-size: 15pt;"> Under preparation.</p>
+	<p style="font-family: Arial; font-size: 17pt;"> 1.5 Open/infinite domains.</p>
+	<p style="font-family: Times; font-size: 15pt;"> Under preparation.</p>
+	<p style="font-family: Arial; font-size: 17pt;"> 2. <b><i>Nonlinear Controller Design</i></b></p>
+
+	
+	<h2> Publications: </h2>
+	<p> [1] <b><u> An active subspace method for accelerating convergence in Delaunay-based optimization via dimension reduction</u></b>
+		<br> Muhan Zhao, Shahrouz Ryan Alimo and Thomas. R. Bewley </p>
+	<p style="font-family: font-size: 15pt;"> <i>2018 IEEE Conference on Decision and Control (CDC)</i>, Miami Beach, FL, 2018, pp. 2765-2770. doi: 10.1109/CDC.2018.8619219 </p>
+	<p> [2] <b><u> Delaunay-based Derivative-free Optimization via Global Surrogates with Safe and Exact Function Evaluations</u></b>
+		<br> Muhan Zhao, Shahrouz Ryan Alimo, Pooriya Beyhaghi and Thomas. R. Bewley </p>
+	<p style="font-family: font-size: 15pt;"> <i> Accepted. To appear in CDC 2019. </i> </p>
+	<p> [3] <b><u> A Delaunay-based method for optimizing infinite time averages of numerical discretizations of ergodic systems</u></b>
+		<br> Pooriya Beyhaghi, Shahrouz Ryan Alimo, Muhan Zhao and Thomas. R. Bewley </p>
+	<p style="font-family: font-size: 15pt;"> <i> Accepted. To appear in AIAA SciTech 2020. </i> </p>
+</div><!-- /.blurb -->
